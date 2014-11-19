@@ -17,6 +17,35 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/skrollr.min.js"></script>
 	<script>
+		$(document).ready(function() {
+			if ($(window).width() > 768) {
+				var owl = $('.owl-carousel');
+				owl.owlCarousel({
+				    items:1,
+				    loop:true,
+				    touchDrag:false,
+				    pullDrag:false,
+				    freeDrag:false,
+				    autoplay:true,
+				    autoplayTimeout:5000,
+				    autoplayHoverPause:true
+				});
+				$('.play').on('click',function(){
+				    owl.trigger('autoplay.play.owl',[1000])
+				})
+				$('.stop').on('click',function(){
+				    owl.trigger('autoplay.stop.owl')
+				})
+			} else {
+				$('.topImageholder').removeClass('hidden');
+			}
+  		});
+	</script>
+	<script type="text/javascript">
+    	skrollr.init({falseHeight: false});
+    </script>
+	
+	<script>
 		if (screen.width <= 768) {
         	document.location = "m.html";
       	}
@@ -171,40 +200,5 @@
 			</div>
 		</div>
 	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/owl.autoplay.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/skrollr.min.js"></script>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
-	<script>
-		$(document).ready(function() {
-			if ($(window).width() > 768) {
-				var owl = $('.owl-carousel');
-				owl.owlCarousel({
-				    items:1,
-				    loop:true,
-				    touchDrag:false,
-				    pullDrag:false,
-				    freeDrag:false,
-				    autoplay:true,
-				    autoplayTimeout:5000,
-				    autoplayHoverPause:true
-				});
-				$('.play').on('click',function(){
-				    owl.trigger('autoplay.play.owl',[1000])
-				})
-				$('.stop').on('click',function(){
-				    owl.trigger('autoplay.stop.owl')
-				})
-			} else {
-				$('.topImageholder').removeClass('hidden');
-			}
-  		});
-	</script>
-	<script type="text/javascript">
-    	skrollr.init({falseHeight: false});
-    </script>
 </body>
 </html
