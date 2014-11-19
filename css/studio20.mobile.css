@@ -1,0 +1,134 @@
+.navbar-inverse {
+	opacity: 0.97;
+}
+.headImg {
+	top: 5%;
+	z-index: 1;
+	position: relative;
+}
+.siteTitle h3 {
+	font-family: Helvetica; 
+	-webkit-filter: invert(100%);
+	font-size: 42px;
+	font-weight: 600;
+	bottom: 0;
+	z-index: 2;
+	position: absolute;
+}
+.mainPanel {
+	clear:both;
+	background-color: white;
+	z-index: 1;
+}
+.mainPanel img {
+	width:100%;
+}
+.mainCard {
+	padding-top: 20px;
+}
+.mainCard h3 {
+	font-family: Helvetica;
+	font-size: 32px;
+	font-weight: 200;
+	line-height: 1.2;
+}
+a {
+	color: #888;
+	text-decoration: none;
+}
+a:hover{
+	color: #888;
+	text-decoration: underline;
+}
+
+.socialLinks {
+	text-align: center;
+	margin-top: 15px;
+/*	padding-top: 30px;
+*/	padding-bottom: 15px;
+/*	background-color: #BACAE8;
+*/}
+.socialLinks .fa-compass {
+	color: #888;
+}
+.socialLinks .stack {
+	color: #444;
+}
+.socialLinks .stack .fa {
+	display: inline-block;
+	margin-top: 5px;
+}
+.stack a {
+	color: #444;
+}
+.littleFeller {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+	width: 60%;
+	min-height: 2px;
+	background-color: gray;
+}
+.wideBottom {
+	background-color: inherit;
+	padding-top: 20px;
+}
+.wideBottom .littleFeller {
+	display: none;
+}
+.facultyHeader {
+	font-family: Helvetica;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.facultyBio {
+	font-family: Helvetica;
+	font-size:14px;
+	text-align: center;
+	display: inline-block;
+}
+.facultyBio img {
+	border-radius:50%;
+}
+.facultyPhoto {
+	margin: auto 20px 10px 20px;
+	background-color: red;
+	border-radius: 50%;
+	height: 66px;
+	width: 66px;
+}
+.contactBox {
+	padding-top: 10px;
+	background-color: #BACAE8;
+}
+.formHolder{
+	margin-top:5px;
+	display:inline-block;
+}
+.nameGroup {
+	display:inline-block;
+}
+.subButton {
+	margin-left:10px;
+	margin-bottom:2px;
+}
+.footerSection {
+	opacity: 0.9;
+	background-color: #101010;
+	color: #777;
+}
+.classesLink,
+.addressLink {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.footerSection .btn {
+	background-color: #222;
+	border: none;
+}
